@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Aquí estás</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <link href="estilos.css" rel="stylesheet" type="text/css">
+       <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+       <script src="funciones.js"></script>
+    </head>
+    <body id="main">
+        <div class="head">
+            <h1>Aqui estás</h1>
+            <img id="aquitoy" src="location76.png">
+            <img onclick="window.location.assign('lugares.html')" id="places" src="map35.png">
+        </div>
+        <div id="map">
+            <img src="" id="image">
+        </div>
+        <div id="place">
+            <input type="text" placeholder="Nombre del local" id="nombreLugar">
+            <input type="number" placeholder="¿Cuanto gastaste? MXN" id="varo">
+            <p id="notas">Calificación</p>
+            <input type="range" min="1" max="5" id="notas" onchange="actualiza(this.value)"><br><p id="notita" value="">3</p>
+            <select id="categoria">
+                <option value="0">Categoría</option>
+                <option value="1">Restaurante</option>
+                <option value="2">Café</option>
+                <option value="3">Tienda</option>
+                <option value="4">Bar</option>
+                <option value="5">Negocio</option>
+            </select>
+        </div>
+        <button id="guardar" onclick="guardarLugar()">Guardar</button>
+    </body>
+    <script>
+        window.addEventListener('load', aquitoy, true);
+    </script>
+</html>
